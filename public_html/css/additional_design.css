@@ -66,7 +66,7 @@ img.playstore, img.appstore{
 
     .top_presentation {
         display: block;
-        height: 250px;
+        height: 200px;
         overflow:hidden;
         margin-left: 355px;
         margin-top: 50px;
@@ -92,7 +92,7 @@ img.playstore, img.appstore{
     }
 
     #about{
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .top_presentation_small{
