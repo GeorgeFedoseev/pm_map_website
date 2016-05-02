@@ -166,7 +166,7 @@
                     <h1 class="section-heading" style="text-align: left">Возможности</h1>
                     <!-- <hr class="primary"> -->
                     <div style="font-size:1.1em">
-                        — поиск кабинетов, преподавателей<br>
+                        — поиск кабинетов и преподавателей<br>
                         — загрузка и редактирование расписания<br>
                         — переход к кабинету по ссылке из расписания<br>
                         — информация о текущей и следующей паре
@@ -189,28 +189,18 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading"><img src="img/time_table.png"/> Новый формат расписания</h2>
                     <hr class="light">
-                    <p class="text-faded">Теперь Вы управляете своим расписанием. Загружайте расписание из Интернета, обновляйте и редактируйте. А интерактивные ссылки на кабинеты помогут быстро сориентироваться.</p>
+                    <p class="text">Теперь Вы управляете своим расписанием. Загружайте расписание из Интернета, обновляйте и редактируйте. А интерактивные ссылки на кабинеты помогут быстро сориентироваться.</p>
                     <!-- <a href="#" class="btn btn-default btn-xl">На!</a> -->
+                    <div class="schedule_screens">
+                        <img class="phone1" src="img/presentation/mockuphone_screens/iphone5c_blue_portrait_1.png" />
+                        <img class="phone2" src="img/presentation/mockuphone_screens/iphone5c_blue_portrait.png" />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="video">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Добавление расписания</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div style="text-align: center;">
-			    <video id="sampleMovie" src="vid3.mov" loop controls style="max-width: 100%" ></video>
-            </div>
-        </div>
-    </section>
+
 
     <section id="services">
         <div class="container">
@@ -255,10 +245,43 @@
         </div>
     </section>
 
+    <section class="bg-primary" id="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Отзывы</h2>
+                    <hr class="light">
+
+                    <div class="vk_comments">
+                        <!-- Put this div tag to the place, where the Comments block will be -->
+                        <div id="vk_comments"></div>
+                        <script type="text/javascript">
+                        VK.Widgets.Comments("vk_comments", {limit: 10, width: "600", attach: "*"});
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-dark">
+        <div class="container text-center">
+            <div class="row">
+                <h2>Скачайте прямо сейчас!</h2>
+                <div class="store_buttons_bottom">
+                    <a target="_blank" href="https://itunes.apple.com/ru/app/karta-pm-pu-raspisanie-zanatij/id1105555392?mt=8">
+                        <img class="appstore" src="img/appstore_buttons/appstore.png"/>
+                    </a>
+                    <img class="playstore" src="img/appstore_buttons/playstore-soon.png"/>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="portfolio" style="margin-top: 100px">
 
   		<div class="container">
             <div class="row">
@@ -365,18 +388,7 @@
         </div>
     </section>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="row">
-                <h2>Доступно скоро.</h2><h2> На iOS и Android!</h2>
-                <!--
-                <a href="#" class="btn btn-default btn-xl wow tada">Play Store</a>
-                &nbsp; &nbsp; &nbsp;
-                <a href="#" class="btn btn-default btn-xl wow tada">AppStore</a>
-                -->
-            </div>
-        </div>
-    </aside>
+
 
     <section id="contact">
         <div class="container">
