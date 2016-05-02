@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="3D карта факультета СПбГУ ПМ-ПУ для смартфона. Информация о местоположении и расписании занятий.">
+    <meta name="copyright" lang="ru" content="Ez Team" />
+
+    <title>Карта ПМ-ПУ</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <link rel="stylesheet" href="css/additional_design.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- VK -->
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+	<script type="text/javascript">
+	  VK.init({apiId: 5431246, onlyWidgets: true});
+	</script>
+
+</head>
+
+<body id="page-top">
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">О приложении</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#schedule">Расписания</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Преимущества</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Наша команда</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>3D карта факультета<br>ПМ-ПУ</h1>
+		<br/>
+                <p>Прямо на Вашем смартфоне!</p>
+
+				<!-- VK Like Button
+				<div id="vk_like"></div>
+				<script type="text/javascript">
+				VK.Widgets.Like("vk_like", {type: "button"});
+				</script>
+				-->
+
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Узнать больше</a>
+                <br>
+                <div class="top_presentation">
+                    <img class="phone1" src="img/presentation/mockuphone_screens/iphone5s_spacegrey_side1.png"/>
+                    <img class="phone2" src="img/presentation/mockuphone_screens/iphone6_silver_side2-1.png"/>
+                </div>
+
+                <br>
+
+
+
+                <div class="store_buttons">
+                    <a target="_blank" href="https://itunes.apple.com/ru/app/karta-pm-pu-raspisanie-zanatij/id1105555392?mt=8">
+                        <img class="appstore" src="img/appstore_buttons/appstore.png"/>
+                    </a>
+                    <img class="playstore" src="img/appstore_buttons/playstore-soon.png"/>
+                </div>
+
+                <br>
+
+                <div class="top_presentation_small">
+                    <img class="phone" src="img/presentation/mockuphone_screens/iphone6_silver_portrait.png"/>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Мы помогаем первокурсникам!</h2>
+                    <hr class="light">
+                    <p class="text-faded">И не только. С нашей картой ни один студент никогда не заблудится на факультете! Не знаешь где пара? Где найти преподавателя? Как попасть в запретный корпус? Наша 3D карта даст ответы на все вопросы!</p>
+                    <!-- <a href="#" class="btn btn-default btn-xl">На!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center" style="text-align: left; width: 100%; max-width: 600px;margin: 0 auto;">
+                    <h1 class="section-heading" style="text-align: left">Возможности</h1>
+                    <!-- <hr class="primary"> -->
+                    <div style="font-size:1.1em">
+                        — поиск кабинетов, преподавателей<br>
+                        — загрузка и редактирование расписания<br>
+                        — переход к кабинету по ссылке из расписания<br>
+                        — информация о текущей и следующей паре
+                    </div>
+                    <div class="features_phone_side">
+                        <img src="img/presentation/mockuphone_screens/iphone5c_blue_angle1.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section class="bg-primary" id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading"><img src="img/time_table.png"/> Новый формат расписания</h2>
+                    <hr class="light">
+                    <p class="text-faded">Теперь Вы управляете своим расписанием. Загружайте расписание из Интернета, обновляйте и редактируйте. А интерактивные ссылки на кабинеты помогут быстро сориентироваться.</p>
+                    <!-- <a href="#" class="btn btn-default btn-xl">На!</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Добавление расписания</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div style="text-align: center;">
+			    <video id="sampleMovie" src="vid3.mov" loop controls style="max-width: 100%" ></video>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Наши преимущества</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <h3>Лучшее в своём роде</h3>
+                        <p class="text-muted">Вы не найдёте лучшего приложения карты ПМ-ПУ!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Легковесность</h3>
+                        <p class="text-muted">~40МБ</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Актуальность</h3>
+                        <p class="text-muted">Расписание регулярно обновляется!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Сделано с любовью</h3>
+                        <p class="text-muted">От студентов для студентов!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="no-padding" id="portfolio">
+
+  		<div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Наша команда</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+
+      <div class="container-fluid">
+            <div class="row no-gutter">
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/people/1.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" id="portfolio-box-caption-1">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Павлов Илья
+                                </div>
+                                <div class="project-name">
+                                    Веб-разработчик
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/people/2.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" id="portfolio-box-caption-2">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Глушкова Екатерина
+                                </div>
+                                <div class="project-name">
+                                    Ведущий художник
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/people/3.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" id="portfolio-box-caption-3">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Пенкрат Андрей
+                                </div>
+                                <div class="project-name">
+                                    Менеджер, веб-разработчик
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/people/4.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" id="portfolio-box-caption-4">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Моисей
+                                </div>
+                                <div class="project-name">
+                                    Талисман
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/people/5.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" id="portfolio-box-caption-5">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Федосеев Георгий
+                                </div>
+                                <div class="project-name">
+                                    Руководитель проекта
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <a class="portfolio-box">
+                        <img src="img/people/6.jpg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption" id="portfolio-box-caption-6">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Симанков Сергей
+                                </div>
+                                <div class="project-name">
+                                    Разработчик
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="row">
+                <h2>Доступно скоро.</h2><h2> На iOS и Android!</h2>
+                <!--
+                <a href="#" class="btn btn-default btn-xl wow tada">Play Store</a>
+                &nbsp; &nbsp; &nbsp;
+                <a href="#" class="btn btn-default btn-xl wow tada">AppStore</a>
+                -->
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Мы открыты к сотрудничеству</h2>
+                    <hr class="primary">
+                    <p>Хотите помочь в развитии приложения? Есть идеи?<br> Свяжитесь с нами:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 text-center col-lg-offset-2">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">pmpumap@gmail.com</a></p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+
+    <!-- Google Analytics -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-75875489-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+
+	<!-- User Report -->
+	<script type="text/javascript">
+		var _urq = _urq || [];
+		_urq.push(['initSite', '036ad2cb-2361-4327-8463-fd047ebfecef']);
+		(function() {
+		var ur = document.createElement('script'); ur.type = 'text/javascript'; ur.async = true;
+		ur.src = ('https:' == document.location.protocol ? 'https://cdn.userreport.com/userreport.js' : 'http://cdn.userreport.com/userreport.js');
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ur, s);
+		})();
+	</script>
+
+</body>
+
+
+</html>
