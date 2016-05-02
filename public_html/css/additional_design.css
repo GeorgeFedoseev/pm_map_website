@@ -248,7 +248,8 @@
 /* COMMENTS */
 .vk_comments{
     position: relative;
-    width: 600px;
+    padding-top: 30px;
+    width: 320px;
     left: 50%;
-    margin-left: -300px;
+    margin-left: -160px;
 }
