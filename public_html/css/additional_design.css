@@ -274,9 +274,9 @@ img.playstore, img.appstore{
 
 /* COMMENTS */
 .vk_comments{
-    position: relative;
-    padding-top: 30px;
-    width: 320px;
-    left: 50%;
-    margin-left: -160px;
+  position: relative;
+  padding-top: 30px;
+  width: 500px;
+  left: 50%;
+  margin-left: -250px;
 }
